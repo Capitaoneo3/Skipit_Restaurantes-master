@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183794905964",
+    "project_id": "skipit-restaurantes",
+    "storage_bucket": "skipit-restaurantes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183794905964:android:733560d27da698c14eb949",
+        "android_client_info": {
+          "package_name": "br.com.app5m.skipitrestaurantes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183794905964-ajca8j76p0t4vsm25dkis2mfbidn5lta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBktbHjQkeyA7oS9DonrUR-7zOoYBwvEI0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183794905964-ajca8j76p0t4vsm25dkis2mfbidn5lta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

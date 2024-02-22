@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/actionButtonStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:focusable="true">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_area"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="5dp"
+        android:drawableTint="#A8A8A8"
+        android:ems="10"
+        android:hint="Buscar Estabelecimento"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp" />
+
+</FrameLayout>

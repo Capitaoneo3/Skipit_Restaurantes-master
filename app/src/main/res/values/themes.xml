@@ -1,0 +1,360 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <style name="Theme.SkipitRestaurantes" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <!-- Secondary brand color. -->
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/trasparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+
+        <!-- Optional, but recommended for full edge-to-edge rendering -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!--        <item name="android:statusBarColor">@color/white</item>-->
+
+
+    </style>
+    <!--    <item name="android:statusBarColor">@android:color/transparent</item>-->
+    <style name="Theme.SkipitRestaurantes.WhiteStatus" parent="Theme.SkipitRestaurantes" >
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:navigationBarColor">@color/trasparent</item>
+                <item name="android:statusBarColor">@color/trasparent</item>
+
+
+    </style>
+
+    <!-- Define other styles to fix theme -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" >
+ <item name="tint">@color/colorAccent</item>
+ <item name="elevation">0dp</item>
+ <item name="android:elevation">0dp</item>
+
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    -
+
+    <style name="Theme.Uplift.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- ... -->
+
+
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+
+    -
+
+    <style name="textInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:textColorHint">@color/textColor2</item>
+        <item name="boxStrokeColor">@color/white</item>
+
+    </style>
+
+
+    <style name="Theme.Uplift" parent="Theme.Uplift.Base">
+
+        <item name="android:ambientShadowAlpha">1</item>
+
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">
+            @color/defaultOutlineAmbientShadowColor
+        </item>
+
+        <item name="android:spotShadowAlpha">1</item>
+
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">
+            @color/defaultOutlineSpotShadowColor
+        </item>
+
+    </style>
+
+
+    -
+
+    <style name="DialogTheme_AppCompat" parent="Base.Theme.AppCompat.Dialog.Alert">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/textColor</item>
+
+        <item name="android:textColorSecondary">@color/textColor</item>
+
+        <item name="android:textColorTertiary">@color/textColor</item>
+
+    </style>
+    -
+    <style name="TextInputLayout" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxBackgroundMode">none</item>
+
+    </style>
+    -
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@drawable/bg_et</item>
+        <item name="android:drawableTint">@color/colorAccent</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    -
+    <style name="button1">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@drawable/shape_button_degrade</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">#FFFFFF</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.07</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:autoSizeMinTextSize" tools:targetApi="o">@dimen/text_size1</item>
+        <item name="backgroundTint" >@null</item>
+
+    </style>
+
+    <style name="button2">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@drawable/shape_button_degradegreen</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">#FFFFFF</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.07</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:autoSizeMinTextSize" tools:targetApi="o">@dimen/text_size1</item>
+        <item name="backgroundTint" >@null</item>
+
+    </style>
+    <style name="button3">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@drawable/shape_button_degradered</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">#FFFFFF</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.07</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:autoSizeMinTextSize" tools:targetApi="o">@dimen/text_size1</item>
+        <item name="backgroundTint" >@null</item>
+
+    </style>
+
+    <style name="button_facebook">
+
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:drawableStart">@drawable/iconstart_facebook</item>
+
+        <item name="android:background">@drawable/button_rounded_facebook</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/blue900</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:autoSizeMinTextSize" tools:targetApi="o">@dimen/text_size1</item>
+
+    </style>
+    <style name="button_google">
+
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:background">@drawable/button_rounded_google</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textColor">@color/red500</item>
+        <item name="iconTint">@color/red500</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:autoSizeMinTextSize" tools:targetApi="o">@dimen/text_size1</item>
+
+    </style>
+
+    -
+
+
+
+
+    <style name="button2NoBg" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <!--        android:foreground="?attr/selectableItemBackgroundBorderless"-->
+        <!--        android:background="?actionBarItemBackground"-->
+
+        <item name="rippleColor">@color/white</item>
+
+        <item name="android:minWidth">90dp</item>
+
+        <item name="android:minHeight">62dp</item>
+
+        <item name="android:textSize">@dimen/text_size3</item>
+
+        <item name="strokeColor">#7DBC1A</item>
+
+        <item name="android:textColor">#7DBC1A</item>
+
+        <item name="cornerRadius">26dp</item>
+
+    </style>
+
+
+    <style name="fontTitleIntro" parent="Widget.MaterialComponents.TextView">
+
+        <item name="android:textSize">30sp</item>
+
+        <item name="android:maxLength">20</item>
+
+    </style>
+
+
+    -
+
+    <style name="fontBodyIntro" parent="Widget.MaterialComponents.TextView">
+
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:maxLength">70</item>
+
+    </style>
+
+
+    -
+
+    <style name="fontBodyIntroSub" parent="Widget.MaterialComponents.TextView">
+
+        <item name="android:textSize">14sp</item>
+
+        <item name="android:maxLength">70</item>
+
+    </style>
+
+
+    -
+
+    <style name="MyAlertDialogTheme" parent="DialogTheme_AppCompat">
+
+        <item name="windowFixedWidthMajor">60%</item>
+
+        <item name="windowFixedWidthMinor">60%</item>
+
+    </style>
+
+
+    -
+
+    <style name="NewDialog_No_ShadownBackground" parent="MyAlertDialogTheme">
+
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowTitleStyle">@null</item>
+
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+
+    -
+
+    <style name="DialogNoBackground" parent="MyAlertDialogTheme">
+
+        <item name="windowFixedWidthMajor">60%</item>
+
+        <item name="windowFixedWidthMinor">60%</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+    </style>
+
+    <style name="FloatingButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="colorSecondary">@color/red500</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+
+    <style name="stroketext" parent="Theme.SkipitRestaurantes">
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2.5</item>
+        <item name="android:shadowDy">2.3</item>
+        <item name="android:shadowRadius">1.6</item>
+    </style>
+
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+
+    <style name="Theme.SkipitRestaurantes.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.InstitutoBlindarAndroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.InstitutoBlindarAndroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

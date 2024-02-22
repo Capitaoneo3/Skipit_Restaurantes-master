@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/recoverPassFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.auth.RecoverPassFrag"
+        android:label="fragment_recover_pass"
+        tools:layout="@layout/fragment_recover_pass" />
+    <fragment
+        android:id="@+id/siginUpFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.auth.SiginUpFrag"
+        android:label="fragment_sigin_up"
+        tools:layout="@layout/fragment_sigin_up" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_siginUpFrag"
+            app:destination="@id/siginUpFrag" />
+        <action
+            android:id="@+id/action_loginFragment_to_recoverPassFrag"
+            app:destination="@id/recoverPassFrag" />
+        <action
+            android:id="@+id/action_loginFragment_to_permissionLocalizationAct"
+            app:destination="@id/permissionLocalizationAct" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="br.com.app5m.skipitrestaurantes.ui.activity.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/permissionLocalizationAct"
+        android:name="br.com.app5m.skipitrestaurantes.ui.activity.PermissionLocalizationAct"
+        android:label="activity_permission_localization"
+        tools:layout="@layout/activity_permission_localization" />
+</navigation>

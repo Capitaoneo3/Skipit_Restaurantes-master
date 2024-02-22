@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_dialog_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Filtros de Busca"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:maxWidth="100dp"
+                android:minWidth="120dp"
+                android:text="Tipo de Comida :"
+                android:textColor="#FFFFFF" />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fontFamily="@font/roboto_italic"
+                android:hint="Selecione"
+
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#303030"
+                android:textSize="14.5sp"
+
+                app:spinner_arrow_animate="true"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_tint="@color/appBlue"
+                app:spinner_divider_color="@color/appOrange"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_array="@array/FoodOf"
+                app:spinner_popup_animation="bounce"
+                app:spinner_popup_background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:maxWidth="100dp"
+                android:minWidth="120dp"
+                android:text="Valor Inicial e Final :"
+                android:textColor="#FFFFFF" />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fontFamily="@font/roboto_italic"
+                android:hint="Selecione"
+
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#303030"
+                android:textSize="14.5sp"
+
+                app:spinner_arrow_animate="true"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_tint="@color/appOrange"
+                app:spinner_divider_color="@color/appOrange"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_array="@array/ValueOf"
+                app:spinner_popup_animation="bounce"
+                app:spinner_popup_background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:maxWidth="100dp"
+                android:minWidth="120dp"
+                android:text="Horário de Funcionamento :"
+                android:textColor="#FFFFFF" />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/spinnerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fontFamily="@font/roboto_italic"
+                android:hint="Selecione"
+
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#303030"
+                android:textSize="14.5sp"
+
+                app:spinner_arrow_animate="true"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_tint="@color/appOrange"
+                app:spinner_divider_color="@color/appOrange"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_array="@array/HourOf"
+                app:spinner_popup_animation="bounce"
+                app:spinner_popup_background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:maxWidth="100dp"
+                android:minWidth="120dp"
+                android:text="Categoria"
+                android:textColor="#FFFFFF" />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:fontFamily="@font/roboto_italic"
+                android:hint="Selecione"
+
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#303030"
+                android:textSize="14.5sp"
+
+                app:spinner_arrow_animate="true"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_tint="@color/appOrange"
+                app:spinner_divider_color="@color/appOrange"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_array="@array/Category"
+                app:spinner_popup_animation="bounce"
+                app:spinner_popup_background="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mapa"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:icon="@android:drawable/ic_dialog_map"
+
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchbar"
+            app:strokeColor="@color/white" />
+
+        <Button
+            android:id="@+id/noBt"
+            style="@style/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/appOrange"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Aplicar" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

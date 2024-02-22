@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mapFrag"
+            app:destination="@id/mapFrag" />
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notifyFragment"
+            app:destination="@id/notifyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchRestDialog22"
+            app:destination="@id/searchRestDialog2" />
+        <action
+            android:id="@+id/action_homeFragment_to_selectAddressIndexFrag"
+            app:destination="@id/selectAddressIndexFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.FavoritesFrag"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFrag_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.menu.MenuFrag"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFrag_to_profileFrag"
+            app:destination="@id/profileFrag" />
+        <action
+            android:id="@+id/action_menuFrag_to_categoriesFrag"
+            app:destination="@id/categoriesFrag" />
+        <action
+            android:id="@+id/action_menuFrag_to_historyFrag"
+            app:destination="@id/historyFrag" />
+        <action
+            android:id="@+id/action_menuFrag_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFrag_to_selectAddressIndexFrag"
+            app:destination="@id/selectAddressIndexFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.MapFrag"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.restaurant.RestaurantDetailFragment"
+        android:label="fragment_restaurant_detail"
+        tools:layout="@layout/fragment_restaurant_detail" >
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_queueActivity"
+            app:destination="@id/queueActivity" />
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_foodMenuEstabelishment"
+            app:destination="@id/foodMenuEstabelishment" />
+        <argument
+            android:name="restaurantArgs"
+            app:argType="br.com.app5m.skipitrestaurantes.model.restaurant.RestaurantSubListItem" />
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_hoursOfWeekQueueDialog"
+            app:destination="@id/hoursOfWeekQueueDialog" />
+    </fragment>
+    <activity
+        android:id="@+id/queueActivity"
+        android:name="br.com.app5m.skipitrestaurantes.ui.activity.QueueActivity"
+        android:label="activity_queue"
+        tools:layout="@layout/activity_queue" >
+        <argument
+            android:name="bundleQueue"
+            app:argType="br.com.app5m.skipitrestaurantes.model.fila.QueueItem" />
+    </activity>
+    <fragment
+        android:id="@+id/profileFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.menu.ProfileFrag"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/categoriesFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.menu.CategoriesFrag"
+        android:label="CategoriesFrag" >
+        <action
+            android:id="@+id/action_categoriesFrag_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.menu.HistoryFrag"
+        android:label="HistoryFrag" />
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.others.RestaurantsFragment"
+        android:label="fragment_restaurant"
+        tools:layout="@layout/fragment_restaurants" >
+        <action
+            android:id="@+id/action_restaurantFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+        <argument
+            android:name="id_categoria"
+            app:argType="integer" />
+        <argument
+            android:name="nome_categoria"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifyFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.others.NotifyFragment"
+        android:label="NotifyFragment" />
+    <fragment
+        android:id="@+id/adressDetailFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.menu.AddressDetailFragment"
+        android:label="fragment_adress_detail"
+        tools:layout="@layout/fragment_address_detail" >
+        <argument
+            android:name="typeAddOrUpdateFrag"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="br.com.app5m.skipitrestaurantes.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/foodMenuEstabelishment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.food_menu.FoodMenuEstabelishment"
+        android:label="FoodMenuEstabelishment" >
+        <action
+            android:id="@+id/action_foodMenuEstabelishment_to_searchDisheFoodMenuFrag"
+            app:destination="@id/searchDisheFoodMenuFrag" />
+        <action
+            android:id="@+id/action_foodMenuEstabelishment_to_dhisDetailFragment"
+            app:destination="@id/dhisDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchDisheFoodMenuFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.food_menu.SearchDisheFoodMenuFrag"
+        android:label="SearchDisheFoodMenuFrag" >
+        <action
+            android:id="@+id/action_searchDisheFoodMenuFrag_to_dhisDetailFragment"
+            app:destination="@id/dhisDetailFragment" />
+        <action
+            android:id="@+id/action_searchDisheFoodMenuFrag_to_dhisDetailFragment2"
+            app:destination="@id/dhisDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dhisDetailFragment"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.home.restaurant.DhisDetailFragment"
+        android:label="fragment_dhis_detail"
+        tools:layout="@layout/fragment_dhis_detail" />
+    <dialog
+        android:id="@+id/searchRestDialog2"
+        android:name="br.com.app5m.skipitrestaurantes.ui.dialog.SearchRestDialog"
+        android:label="SearchRestDialog" >
+        <argument
+            android:name="restaurantList"
+            app:argType="br.com.app5m.skipitrestaurantes.model.restaurant.Restaurant" />
+        <action
+            android:id="@+id/action_searchRestDialog2_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+        <argument
+            android:name="searchText"
+            app:argType="string"
+            android:defaultValue='""' />
+    </dialog>
+    <fragment
+        android:id="@+id/selectAddressIndexFrag"
+        android:name="br.com.app5m.skipitrestaurantes.ui.fragment.main.menu.SelectAddressIndexFrag"
+        android:label="SelectAddressIndexFrag" >
+        <action
+            android:id="@+id/action_selectAddressIndexFrag_self"
+            app:destination="@id/selectAddressIndexFrag"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/selectAddressIndexFrag"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_selectAddressIndexFrag_to_addressDetailFragment"
+            app:destination="@id/adressDetailFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/hoursOfWeekQueueDialog"
+        android:name="br.com.app5m.skipitrestaurantes.ui.dialog.HoursOfWeekQueueDialog"
+        android:label="HoursOfWeekQueueDialog" >
+        <argument
+            android:name="hoursOfWeekList"
+            app:argType="br.com.app5m.skipitrestaurantes.model.fila.Queue" />
+    </dialog>
+</navigation>
